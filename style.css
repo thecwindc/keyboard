@@ -1,0 +1,69 @@
+*{margin: 0;padding: 0;}
+a{
+    text-decoration: none;
+}
+body{
+    background: rgb(60, 67, 75) url(./bg.png) no-repeat 100px 200px;
+    background-size: cover;//背景图自适应
+}
+kbd{
+    
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+}
+kbd > button{
+    position: absolute;
+    font-size: 1px;
+    right: 0;
+    bottom: 0;
+    display:none; //隐藏样式
+}
+kbd:hover> button{
+    display: inline-block;//样式鼠标移入显示
+}
+main{
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#mom{
+    
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1) ;
+    border-radius: 20px;
+    
+}
+#mom div:nth-child(2){
+    margin-left: -42px;
+}
+#mom div:nth-child(3){
+    margin-left: -150px;
+}
+.key{
+    position: relative;
+    margin: 10px;
+    background: linear-gradient(to bottom, #333333 0%,#111111 100%);
+    width: 80px;
+    height: 60px;
+    color: #c5c5c5;
+    border-radius: 7px;
+    box-shadow:  0 2px 1px 0px #222222, 0 0 0 1px #1A1B1C, 0 0 0 2px #1F2020, 0 4px 0 2px #080808;
+    font: 20px bold  Helvetica;
+}
+.key img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left:6px;
+    bottom:6px;
+}
+.key span{
+    position: absolute;
+    left: 6px; 
+}
+
